@@ -1,0 +1,25 @@
+defaults:
+  provider: local_appium
+  device: ios_browser
+  session: iPad_browser
+providers:
+  - provider: local_appium
+    host: localhost
+    port: 4723
+    appium_server_url: http://$host:$port/wd/hub
+    capabilities:
+      remote_url: $appium_server_url
+devices:
+  - device: ios_browser
+    capabilities:
+      browserName: Safari
+      automationName: Safari
+      deviceName: My iPhone
+      platform: ios
+      udid: 00008101-000155202EE9001E
+      showXcodeLog: true
+sessions:
+  - session: iPad_browser
+    mobile_browser: true
+    capabilities:
+      newCommandTimeout: 0

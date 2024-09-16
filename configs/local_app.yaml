@@ -1,0 +1,26 @@
+defaults:
+  provider: local_appium
+  device: ios_app
+  session: neo_app
+providers:
+  - provider: local_appium
+    host: localhost
+    port: 4723
+    appium_server_url: http://$host:$port/wd/hub
+    capabilities:
+      remote_url: $appium_server_url
+devices:
+  - device: ios_app
+    capabilities:
+      automationName: XCUITest
+      deviceName: My iPhone
+      platform: ios
+      udid: 00008101-000155202EE9001E
+      showXcodeLog: true
+sessions:
+  - session: neo_app
+    capabilities:
+      newCommandTimeout: 0
+      bundleId: com.pernodricard.neo.test
+      fullReset: false
+      noReset: true

@@ -1,0 +1,16 @@
+output/
+.idea/
+libraries/__pycache__/
+temp*.png
+*.xml
+*pyc
+log.html
+output.xml
+report.html
+debug.txt
+*.log
+source_*.html
+screenshots/
+logger_screenshots/
+.vscode/
+resources/secret.robot
